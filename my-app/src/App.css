@@ -1,0 +1,159 @@
+/* Navbar container */
+.header-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0; /* Example background color */
+  border-radius: 8px; /* Optional rounded corners */
+  background-color: #afcef1;
+  color: #042b67;
+  
+} 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10p;
+  background-color: #1e75f6;
+  height: auto;;
+   
+}
+
+/* Left and center sections */
+.navbar-left,
+/* .navbar-center  */
+.logo
+{
+  display: flex;
+   align-items: center; 
+  height: 100px;;
+  width: auto;
+
+
+}
+
+/* Center section links */
+.navbar-center .nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-center .nav-links li {
+  margin-left: 20px;
+}
+
+.navbar-center .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for links */
+.navbar-center .nav-links li a:hover {
+  background-color: #685757;
+  border-radius: 4px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-center {
+    margin-top: 10px;
+  }
+
+  .navbar-center .nav-links {
+    flex-direction: column;
+  }
+
+  .navbar-center .nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  /* .logo{
+    image-rendering: 10px;
+    width: auto;
+  } */
+}
+/* Assuming you have a CSS file like App.css */
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f0f0; /* Optional: Set a background color */
+  background-image: url('https://media.istockphoto.com/id/1055438046/photo/back-view-of-successful-older-business-owner-or-manager-in-discussion-with-employee-on-site.jpg?s=1024x1024&w=is&k=20&c=Lp4w0T2fwoBV97yv43HVbcjC-T4_A9ecsQ8pEyD8n0w=')
+}
+.header {
+  text-align: center;
+  margin-bottom: 20px; /* Add some space below the header */
+  
+}
+.form-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+}
+.search-container {
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between;
+  gap: 10px;
+  
+}
+
+.search-section {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Make the section take full width */
+}
+
+.search-box {
+  background: rgb(167, 199, 234); /* Optional: Background color for the search box */
+  padding: 10px; /* Add padding inside the search box */
+  border-radius: 6px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+
+}
+
+.search-form {
+  display:flexbox;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px; /* Space between form elements */
+}
+
+.search-form select, 
+.search-form button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px; /* Slight rounding for select and button */
+}
+
+.search-form button {
+  background-color: #007bff; /* Button color */
+  color: white; /* Button text color */
+  cursor: pointer;
+  border: none; /* Remove default border */
+}
+
+.search-form button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
